@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Quote Generator</title>
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Quote Generator</title>
+        <meta name="description" content="">
+        
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
-    <body>
-        <h1>Random Quote Generator</h1>
-        <div id="quoteDisplay">
-            <!-- Display quote -->
-        </div>
-        <button onclick="newQuote()">New Quote</button>
+    <body>        
+      <div class="container-fluid">       
+        <div class="fullscreen-bg">       
+            <video preload loop muted autoplay poster="video/Mb.jpg" class="fullscreen-bg__video"> 
+                <source src="video/Mb.wmv" type="video/wmv">
+                <source src="video/Mb.mp4" type="video/mp4">
+                <source src="video/Mb.ogv" type="video/ogg">      
+                Your browser does not support the video tag.          
+            </video>
+        <div class="content-wrapper">
+           <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="quoteGenerator"><h3>Random Quote Generator</h3></div>
+                </div>
+                <div class="col-md-4 col-sm-3"></div>
+                <div class="col-md-4 col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3"></div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div class="col-md-3 col-sm-3"></div>
+            </div> 
+            <div class="row">
+                <div class="col-md-3 col-sm-3"></div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div class="col-md-3 col-sm-3"></div>
+            </div> 
+            <div class="row">
+                <div class="col-md-3 col-sm-3"></div>
+                <div class="col-md-6 col-sm-6">
+                    <div id="quoteDisplay"><!-- Display quote --></div>
+                </div>
+                <div class="col-md-3 col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6"></div>
+                <div class="col-md-3 col-sm-3" id="authorDisplay">
+                  <div id="authorDisplay"><!-- Display author --> </div>
+                </div>
+                <div class="col-md-3 col-sm-3"></div>
+            </div>        
+         
+            <div class="buttonMy">               
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet/?text=" data-size="large" target="_blank">
+                <button type="button" class="btn btn-primary tweet" onclick="twitter()"><i class="fa fa-twitter" aria-hidden="true"></i></button></a> 
+                <button class = "btn btn-primary" onclick="newQuote()">New Quote</button>
+            </div>
+          </div>
+         </div>   
+        </div>       
+       </div>
         <script src="javascript.js"></script>
     </body>
 </html>
